@@ -6,8 +6,11 @@ Spotify Simulator App based on Service-Oriented-Architecture (SOA) --> REST & SO
 BACKEND: 
 
   The application is composed of 3 services: 
-    Identity Management -> implemented in python using SOAP,
-    Songs_Artists -> implemented in Java using REST,
+  
+    Identity Management -> implemented in python using SOAP
+    
+    Songs_Artists -> implemented in Java using REST
+    
     Playlists -> implemented in Java using REST.
 
   These services are secured based on JWT token.
