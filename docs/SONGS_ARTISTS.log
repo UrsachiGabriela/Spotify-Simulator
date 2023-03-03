@@ -1,0 +1,92 @@
+2023-01-22 20:08:05 [background-preinit] INFO  : HV000001: Hibernate Validator 6.2.5.Final
+2023-01-22 20:08:05 [main] INFO  : Starting SpotifyApplication using Java 18.0.2-ea on gabi-HP-EliteBook-820-G2 with PID 59663 (/home/gabi/Facultate/POS/POS_homeworks/activitate-laborator-2022-2023-UrsachiGabriela/Proiect/SONGS_ARTISTS/target/classes started by gabi in /home/gabi/Facultate/POS/POS_homeworks/activitate-laborator-2022-2023-UrsachiGabriela/Proiect/SONGS_ARTISTS)
+2023-01-22 20:08:05 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-01-22 20:08:06 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-22 20:08:06 [main] INFO  : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2023-01-22 20:08:07 [main] INFO  : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$793f687e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-01-22 20:08:07 [main] INFO  : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-01-22 20:08:07 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-01-22 20:08:07 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-22 20:08:07 [main] INFO  : Starting service [Tomcat]
+2023-01-22 20:08:07 [main] INFO  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-22 20:08:08 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-01-22 20:08:08 [main] INFO  : Root WebApplicationContext: initialization completed in 2622 ms
+2023-01-22 20:08:08 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-22 20:08:08 [main] INFO  : HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-01-22 20:08:08 [main] INFO  : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-22 20:08:08 [main] INFO  : HikariPool-1 - Starting...
+2023-01-22 20:08:08 [main] INFO  : HikariPool-1 - Start completed.
+2023-01-22 20:08:08 [main] INFO  : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2023-01-22 20:08:09 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-22 20:08:09 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-22 20:08:09 [main] INFO  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2023-01-22 20:08:10 [main] INFO  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2023-01-22 20:08:10 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-22 20:08:11 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-01-22 20:08:11 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-22 20:08:11 [main] INFO  : Started SpotifyApplication in 7.46 seconds (JVM running for 8.657)
+2023-01-22 20:08:14 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-22 20:08:14 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-01-22 20:08:14 [http-nio-8080-exec-1] INFO  : Completed initialization in 2 ms
+2023-01-22 20:08:14 [http-nio-8080-exec-1] INFO  : [ControllerAdvice] -> handle MethodArgumentNotValidException, details:Validation failed for argument [0] in public org.springframework.http.ResponseEntity<spotify.view.responses.SongResponse> spotify.controller.SongsController.createSong(spotify.view.requests.NewSongRequest,java.lang.String): [Field error in object 'newSongRequest' on field 'name': rejected value [Don’t Believe Her]; codes [Pattern.newSongRequest.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [newSongRequest.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@556aa0bc,^[- 'a-zA-Z\s]+]; default message [Invalid song name format]] 
+2023-01-22 20:09:18 [http-nio-8080-exec-5] INFO  : [SongsController] -> POST, addNewSong, song:NewSongRequest(name=Don't Believe Her, genre=ROCK, year=1990, type=SONG, parentId=88, artists=[Scorpions])
+2023-01-22 20:09:18 [http-nio-8080-exec-5] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMDdUMTI6NDU6MDkuMzg4MTA2IiwgImp0aSI6ICIyYTM1ZjEzMC04ZTc0LTExZWQtOTMyOS02NWQ3ZGRmY2U1YmEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.Hvl-IXfVxVQ8c9qAZISHUCHRfUxP05yzHCMdmrrA_7A
+2023-01-22 20:09:18 [http-nio-8080-exec-5] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:09:18 [http-nio-8080-exec-5] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:09:18 [http-nio-8080-exec-5] INFO  : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [SongsController] -> POST, addNewSong, song:NewSongRequest(name=Don't Believe Her, genre=ROCK, year=1990, type=SONG, parentId=88, artists=[Scorpions])
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6MzA6NDIuNDAyMDYzIiwgImp0aSI6ICJhZmM3ZGUxMC05YTdlLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.CJlIsLW3QNBzPzsO96e2VltuaS-AtAWFv9Ib4cpKoKQ
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [AuthService] -> verify roles
+2023-01-22 20:09:37 [http-nio-8080-exec-6] INFO  : [CreateValidator] -> validate entity before insertion: SongEntity
+2023-01-22 20:11:10 [http-nio-8080-exec-9] INFO  : [ArtistsController] -> GET, getAllArtists: page:null, size:1, name:null, match:null
+2023-01-22 20:11:39 [http-nio-8080-exec-10] INFO  : [ArtistsController] -> POST, assignSongsToArtist, uuid:72dc2e44-2d3a-487b-a166-30548b14a793, songs:NewSongsForArtistRequest(songsId=[97])
+2023-01-22 20:11:39 [http-nio-8080-exec-10] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMDlUMTc6NTI6NDQuNzk5ODA4IiwgImp0aSI6ICI3NzUxYzhhZS05MDMxLTExZWQtYjI0Ni05NWFlYzEzMTk0MDIiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.wPZQ4JKzTWdCIZdoKufULIXRjt_Ejnjne3IP8ZjFbxA
+2023-01-22 20:11:39 [http-nio-8080-exec-10] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:11:39 [http-nio-8080-exec-10] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:11:39 [http-nio-8080-exec-10] INFO  : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:11:53 [http-nio-8080-exec-2] INFO  : [ArtistsController] -> POST, assignSongsToArtist, uuid:72dc2e44-2d3a-487b-a166-30548b14a793, songs:NewSongsForArtistRequest(songsId=[97])
+2023-01-22 20:11:53 [http-nio-8080-exec-2] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6MzA6NDIuNDAyMDYzIiwgImp0aSI6ICJhZmM3ZGUxMC05YTdlLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.CJlIsLW3QNBzPzsO96e2VltuaS-AtAWFv9Ib4cpKoKQ
+2023-01-22 20:11:53 [http-nio-8080-exec-2] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:11:53 [http-nio-8080-exec-2] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:11:54 [http-nio-8080-exec-2] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:11:54 [http-nio-8080-exec-2] INFO  : [AuthService] -> verify roles
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [SongsController] -> DELETE, deleteSong, songId:88
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6MzA6NDIuNDAyMDYzIiwgImp0aSI6ICJhZmM3ZGUxMC05YTdlLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.CJlIsLW3QNBzPzsO96e2VltuaS-AtAWFv9Ib4cpKoKQ
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [AuthService] -> verify roles
+2023-01-22 20:13:39 [http-nio-8080-exec-4] INFO  : [ControllerAdvice] -> handle RuntimeException, details:You are not able to remove this album until you remove all its songs
+2023-01-22 20:14:22 [http-nio-8080-exec-5] INFO  : [SongsController] -> GET, getAllSongs: page:0, size:6, searchBy:null, searchedValue:null, match:null
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [SongsController] -> DELETE, deleteSong, songId:75
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6MzA6NDIuNDAyMDYzIiwgImp0aSI6ICJhZmM3ZGUxMC05YTdlLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.CJlIsLW3QNBzPzsO96e2VltuaS-AtAWFv9Ib4cpKoKQ
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:14:32 [http-nio-8080-exec-6] INFO  : [AuthService] -> verify roles
+2023-01-22 20:19:37 [http-nio-8080-exec-7] INFO  : [SongsController] -> GET, getSongById, songId:88
+2023-01-22 20:20:36 [http-nio-8080-exec-9] INFO  : [SongsController] -> GET, getSongById, songId:89
+2023-01-22 20:25:15 [http-nio-8080-exec-1] INFO  : [SongsController] -> GET, getAllSongs: page:0, size:6, searchBy:null, searchedValue:null, match:null
+2023-01-22 20:25:26 [http-nio-8080-exec-3] INFO  : [SongsController] -> PATCH, updateSong, id:74, song:SongForUpdateRequest(name=Normal name for this song, genre=ROCK, year=2019)
+2023-01-22 20:25:26 [http-nio-8080-exec-3] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMTFUMjE6MjI6MTguMDc1MjI2IiwgImp0aSI6ICIxMjc0N2IxZS05MWUxLTExZWQtOWQ5ZC1lMzRjOGI3ZDdhZDYiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.cZFgOO8Fiez3YUe_TaL8CtUeMRukMk4s41zyi05FEP4
+2023-01-22 20:25:26 [http-nio-8080-exec-3] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:25:26 [http-nio-8080-exec-3] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:25:26 [http-nio-8080-exec-3] INFO  : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [SongsController] -> PATCH, updateSong, id:74, song:SongForUpdateRequest(name=Normal name for this song, genre=ROCK, year=2019)
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6NDY6NTUuNTUxNDM3IiwgImp0aSI6ICJmM2QyYWQ5MC05YTgwLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.XmbwLUBqH6m7VO8G7foIZk74I5-tmCl0z8kSsVE14AY
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [AuthService] -> verify roles
+2023-01-22 20:25:43 [http-nio-8080-exec-4] INFO  : [CreateValidator] -> validate entity before insertion: SongEntity
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [SongsController] -> PATCH, updateSong, id:74, song:SongForUpdateRequest(name=Normal name for this song, genre=ROC, year=2019)
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [AuthService] -> authorize: authHeader:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiAiaHR0cDovLzEyNy4wLjAuMTo4MDAwIiwgInN1YiI6IDM4LCAiZXhwIjogIjIwMjMtMDEtMjJUMjA6NDY6NTUuNTUxNDM3IiwgImp0aSI6ICJmM2QyYWQ5MC05YTgwLTExZWQtOWJjOC0yMWY0N2VkNDQwNGEiLCAicm9sZXMiOiBbIkNPTlRFTlRfTUFOQUdFUiIsICJBUlRJU1QiLCAiQ0xJRU5UIl19.XmbwLUBqH6m7VO8G7foIZk74I5-tmCl0z8kSsVE14AY
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [AuthService] -> verify header existence 
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [IDMClient] -> Call IDM module for authorize user
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [AuthService] -> decode SOAP response for authorize
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [AuthService] -> verify roles
+2023-01-22 20:26:28 [http-nio-8080-exec-5] INFO  : [ControllerAdvice] -> handle RuntimeException, details:Invalid genre
+2023-01-22 20:36:15 [http-nio-8080-exec-7] INFO  : Init duration for springdoc-openapi is: 886 ms

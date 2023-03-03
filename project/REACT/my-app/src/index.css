@@ -1,0 +1,907 @@
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: normal;
+    color: #495057;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: .5em;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem 0;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+p {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+    50% {
+        background-color: rgba(165, 165, 165, 0.3)
+    }
+    100% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+}
+
+.customer-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.customer-badge.status-qualified {
+    background-color: #C8E6C9;
+    color: #256029;
+}
+
+.customer-badge.status-unqualified {
+    background-color: #FFCDD2;
+    color: #C63737;
+}
+
+.customer-badge.status-negotiation {
+    background-color: #FEEDAF;
+    color: #8A5340;
+}
+
+.customer-badge.status-new {
+    background-color: #B3E5FC;
+    color: #23547B;
+}
+
+.customer-badge.status-renewal {
+    background-color: #ECCFFF;
+    color: #694382;
+}
+
+.customer-badge.status-proposal {
+    background-color: #FFD8B2;
+    color: #805B36;
+}
+
+.product-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.product-badge.status-instock {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.product-badge.status-outofstock {
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.product-badge.status-lowstock {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.order-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.order-badge.order-delivered {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.order-badge.order-cancelled {
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.order-badge.order-pending {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.order-badge.order-returned {
+    background: #ECCFFF;
+    color: #694382;
+}
+
+.image-text {
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+
+.p-multiselect-representative-option {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p-multiselect-representative-option img {
+    vertical-align: middle;
+    width: 24px;
+}
+
+.p-multiselect-representative-option span {
+    margin-top: .125rem;
+}
+
+.p-column-filter {
+    width: 100%;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+}
+
+.country-item img.flag {
+    width: 18px;
+    margin-right: .5rem;
+}
+
+.flag {
+    vertical-align: middle;
+}
+
+span.flag {
+    width:44px;
+    height:30px;
+    display:inline-block;
+}
+
+img.flag {
+    width:30px
+}
+
+                    
+
+
+.datatable-crud-demo .table-header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .table-header {
+        align-items: flex-start;
+    }
+}
+.datatable-crud-demo .product-image {
+    width: 100px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.datatable-crud-demo .p-dialog .product-image {
+    width: 150px;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+.datatable-crud-demo .confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .p-toolbar {
+        flex-wrap: wrap;
+    }
+    .datatable-crud-demo .p-toolbar .p-button {
+        margin-bottom: 0.25rem;
+    }
+    .datatable-crud-demo .table-header {
+        flex-direction: column;
+    }
+    .datatable-crud-demo .table-header .p-input-icon-left, .datatable-crud-demo .table-header input {
+        width: 100%;
+    }
+}
+
+
+
+/* ButtonDemo.css */
+
+.button-demo .p-button {
+    margin-right: 0.5rem;
+}
+.button-demo .p-buttonset .p-button {
+    margin-right: 0;
+}
+.button-demo .template .p-button i {
+    line-height: 2.25rem;
+}
+.button-demo .template .p-button.google {
+    background: linear-gradient(to left, var(--purple-600) 50%, var(--purple-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--purple-700);
+}
+.button-demo .template .p-button.google:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.google i {
+    background-color: var(--purple-700);
+}
+.button-demo .template .p-button.google:focus {
+    box-shadow: 0 0 0 1px var(--purple-400);
+}
+.button-demo .template .p-button.youtube {
+    background: linear-gradient(to left, var(--pink-600) 50%, var(--pink-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--pink-700);
+}
+.button-demo .template .p-button.youtube:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.youtube i {
+    background-color: var(--pink-700);
+}
+.button-demo .template .p-button.youtube:focus {
+    box-shadow: 0 0 0 1px var(--pink-400);
+}
+.button-demo .template .p-button.vimeo {
+    background: linear-gradient(to left, var(--green-200) 50%, var(--green-300) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--green-300);
+}
+.button-demo .template .p-button.vimeo:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.vimeo i {
+    background-color: var(--green-300);
+}
+.button-demo .template .p-button.vimeo:focus {
+    box-shadow: 0 0 0 1px var(--green-400);
+}
+.button-demo .template .p-button.facebook {
+    background: linear-gradient(to left, var(--indigo-600) 50%, var(--indigo-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--indigo-700);
+}
+.button-demo .template .p-button.facebook:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.facebook i {
+    background-color: var(--indigo-700);
+}
+.button-demo .template .p-button.facebook:focus {
+    box-shadow: 0 0 0 1px var(--indigo-400);
+}
+.button-demo .template .p-button.twitter {
+    background: linear-gradient(to left, var(--blue-400) 50%, var(--blue-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--blue-500);
+}
+.button-demo .template .p-button.twitter:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.twitter i {
+    background-color: var(--blue-500);
+}
+.button-demo .template .p-button.twitter:focus {
+    box-shadow: 0 0 0 1px var(--blue-200);
+}
+.button-demo .template .p-button.slack {
+    background: linear-gradient(to left, var(--orange-400) 50%, var(--orange-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--orange-500);
+}
+.button-demo .template .p-button.slack:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.slack i {
+    background-color: var(--orange-500);
+}
+.button-demo .template .p-button.slack:focus {
+    box-shadow: 0 0 0 1px var(--orange-200);
+}
+.button-demo .template .p-button.amazon {
+    background: linear-gradient(to left, var(--yellow-400) 50%, var(--yellow-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--yellow-500);
+}
+.button-demo .template .p-button.amazon:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.amazon i {
+    background-color: var(--yellow-500);
+}
+.button-demo .template .p-button.amazon:focus {
+    box-shadow: 0 0 0 1px var(--yellow-200);
+}
+.button-demo .template .p-button.discord {
+    background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--bluegray-800);
+}
+.button-demo .template .p-button.discord:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.discord i {
+    background-color: var(--bluegray-800);
+}
+.button-demo .template .p-button.discord:focus {
+    box-shadow: 0 0 0 1px var(--bluegray-500);
+}
+@media screen and (max-width: 960px) {
+    .button-demo .p-button {
+        margin-bottom: 0.5rem;
+    }
+    .button-demo .p-button:not(.p-button-icon-only) {
+        display: flex;
+        width: 100%;
+    }
+    .button-demo .p-buttonset .p-button {
+        margin-bottom: 0;
+    }
+}
+                 
+.sidenav {
+    height: 100em;
+    width: 160px;
+    position:relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .navbar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  .block{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 3;
+  }
+
+
+  .block2{
+    display: flex;
+    justify-content:space-between;
+    flex-grow: 3;
+  }
+
+
+.datatable-crud-demo .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .table-header {
+        align-items: flex-start;
+    }
+}
+.datatable-crud-demo .product-image {
+    width: 100px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.datatable-crud-demo  .product-image {
+    width: 150px;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+
+
+.p-dialog {
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.datatable-crud-demo .confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .p-toolbar {
+        flex-wrap: wrap;
+    }
+    .datatable-crud-demo .p-toolbar .p-button {
+        margin-bottom: 0.25rem;
+    }
+    .datatable-crud-demo .table-header {
+        flex-direction: column;
+    }
+    .datatable-crud-demo .table-header .p-input-icon-left, .datatable-crud-demo .table-header input {
+        width: 100%;
+    }
+}
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: normal;
+    color: #495057;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: .5em;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem 0;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+p {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+    50% {
+        background-color: rgba(165, 165, 165, 0.3)
+    }
+    100% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+}
+
+.customer-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.customer-badge.status-qualified {
+    background-color: #C8E6C9;
+    color: #256029;
+}
+
+.customer-badge.status-unqualified {
+    background-color: #FFCDD2;
+    color: #C63737;
+}
+
+.customer-badge.status-negotiation {
+    background-color: #FEEDAF;
+    color: #8A5340;
+}
+
+.customer-badge.status-new {
+    background-color: #B3E5FC;
+    color: #23547B;
+}
+
+.customer-badge.status-renewal {
+    background-color: #ECCFFF;
+    color: #694382;
+}
+
+.customer-badge.status-proposal {
+    background-color: #FFD8B2;
+    color: #805B36;
+}
+
+.product-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.product-badge.status-instock {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.product-badge.status-outofstock {
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.product-badge.status-lowstock {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.order-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.order-badge.order-delivered {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.order-badge.order-cancelled {
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.order-badge.order-pending {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.order-badge.order-returned {
+    background: #ECCFFF;
+    color: #694382;
+}
+
+.image-text {
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+
+.p-multiselect-representative-option {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p-multiselect-representative-option img {
+    vertical-align: middle;
+    width: 24px;
+}
+
+.p-multiselect-representative-option span {
+    margin-top: .125rem;
+}
+
+.p-column-filter {
+    width: 100%;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+}
+
+.country-item img.flag {
+    width: 18px;
+    margin-right: .5rem;
+}
+
+.flag {
+    vertical-align: middle;
+}
+
+span.flag {
+    width:44px;
+    height:30px;
+    display:inline-block;
+}
+
+img.flag {
+    width:30px
+}
+
+                    
+
+/* ButtonDemo.css */
+
+.button-demo .p-button {
+    margin-right: 0.5rem;
+}
+.button-demo .p-buttonset .p-button {
+    margin-right: 0;
+}
+.button-demo .template .p-button i {
+    line-height: 2.25rem;
+}
+.button-demo .template .p-button.google {
+    background: linear-gradient(to left, var(--purple-600) 50%, var(--purple-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--purple-700);
+}
+.button-demo .template .p-button.google:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.google i {
+    background-color: var(--purple-700);
+}
+.button-demo .template .p-button.google:focus {
+    box-shadow: 0 0 0 1px var(--purple-400);
+}
+.button-demo .template .p-button.youtube {
+    background: linear-gradient(to left, var(--pink-600) 50%, var(--pink-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--pink-700);
+}
+.button-demo .template .p-button.youtube:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.youtube i {
+    background-color: var(--pink-700);
+}
+.button-demo .template .p-button.youtube:focus {
+    box-shadow: 0 0 0 1px var(--pink-400);
+}
+.button-demo .template .p-button.vimeo {
+    background: linear-gradient(to left, var(--green-200) 50%, var(--green-300) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--green-300);
+}
+.button-demo .template .p-button.vimeo:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.vimeo i {
+    background-color: var(--green-300);
+}
+.button-demo .template .p-button.vimeo:focus {
+    box-shadow: 0 0 0 1px var(--green-400);
+}
+.button-demo .template .p-button.facebook {
+    background: linear-gradient(to left, var(--indigo-600) 50%, var(--indigo-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--indigo-700);
+}
+.button-demo .template .p-button.facebook:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.facebook i {
+    background-color: var(--indigo-700);
+}
+.button-demo .template .p-button.facebook:focus {
+    box-shadow: 0 0 0 1px var(--indigo-400);
+}
+.button-demo .template .p-button.twitter {
+    background: linear-gradient(to left, var(--blue-400) 50%, var(--blue-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--blue-500);
+}
+.button-demo .template .p-button.twitter:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.twitter i {
+    background-color: var(--blue-500);
+}
+.button-demo .template .p-button.twitter:focus {
+    box-shadow: 0 0 0 1px var(--blue-200);
+}
+.button-demo .template .p-button.slack {
+    background: linear-gradient(to left, var(--orange-400) 50%, var(--orange-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--orange-500);
+}
+.button-demo .template .p-button.slack:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.slack i {
+    background-color: var(--orange-500);
+}
+.button-demo .template .p-button.slack:focus {
+    box-shadow: 0 0 0 1px var(--orange-200);
+}
+.button-demo .template .p-button.amazon {
+    background: linear-gradient(to left, var(--yellow-400) 50%, var(--yellow-500) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #000;
+    border-color: var(--yellow-500);
+}
+.button-demo .template .p-button.amazon:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.amazon i {
+    background-color: var(--yellow-500);
+}
+.button-demo .template .p-button.amazon:focus {
+    box-shadow: 0 0 0 1px var(--yellow-200);
+}
+.button-demo .template .p-button.discord {
+    background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--bluegray-800);
+}
+.button-demo .template .p-button.discord:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.discord i {
+    background-color: var(--bluegray-800);
+}
+.button-demo .template .p-button.discord:focus {
+    box-shadow: 0 0 0 1px var(--bluegray-500);
+}
+@media screen and (max-width: 960px) {
+    .button-demo .p-button {
+        margin-bottom: 0.5rem;
+    }
+    .button-demo .p-button:not(.p-button-icon-only) {
+        display: flex;
+        width: 100%;
+    }
+    .button-demo .p-buttonset .p-button {
+        margin-bottom: 0;
+    }
+}
+                 
+
+.datatable-crud-demo .table-header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .table-header {
+        align-items: flex-start;
+    }
+}
+.datatable-crud-demo .product-image {
+    width: 100px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.datatable-crud-demo .p-dialog .product-image {
+    width: 150px;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+.datatable-crud-demo .confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 960px) {
+    .datatable-crud-demo .p-toolbar {
+        flex-wrap: wrap;
+    }
+    .datatable-crud-demo .p-toolbar .p-button {
+        margin-bottom: 0.25rem;
+    }
+    .datatable-crud-demo .table-header {
+        flex-direction: column;
+    }
+    .datatable-crud-demo .table-header .p-input-icon-left, .datatable-crud-demo .table-header input {
+        width: 100%;
+    }
+}
+
+.link:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #f1f1f1;
+}

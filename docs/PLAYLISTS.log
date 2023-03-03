@@ -1,0 +1,48 @@
+2023-01-22 18:15:09.201  INFO 40688 --- [nio-8081-exec-4] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+javax.xml.bind.JAXBElement@730b01cd
+2023-01-22 18:43:20.896  INFO 40688 --- [nio-8081-exec-6] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+2023-01-22 18:43:20.917  INFO 40688 --- [nio-8081-exec-6] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle UnauthorizedException
+2023-01-22 18:43:20.920  WARN 40688 --- [nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-01-22 18:43:20.921  INFO 40688 --- [nio-8081-exec-8] c.s.playlists.controller.WebController   : [WebController] -> GET, getPlaylistWithID 63963a304c34580884003eb5
+2023-01-22 18:43:20.921  INFO 40688 --- [nio-8081-exec-7] c.s.playlists.controller.WebController   : [WebController] -> GET, getPlaylistWithID 63af44c60cc8261e6ee44223
+2023-01-22 18:43:20.922  INFO 40688 --- [nio-8081-exec-8] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle UnauthorizedException
+2023-01-22 18:43:20.922  INFO 40688 --- [nio-8081-exec-7] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle UnauthorizedException
+2023-01-22 18:43:20.927  INFO 40688 --- [nio-8081-exec-6] c.s.playlists.controller.WebController   : [WebController] -> GET, getPlaylistWithID 63af448e7332c204bb0da15c
+2023-01-22 18:43:20.927  INFO 40688 --- [nio-8081-exec-6] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle UnauthorizedException
+2023-01-22 18:43:21.310  INFO 40688 --- [io-8081-exec-10] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+2023-01-22 18:43:21.311  INFO 40688 --- [io-8081-exec-10] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle UnauthorizedException
+2023-01-22 18:43:23.798  WARN 40688 --- [nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-01-22 18:43:27.926  WARN 40688 --- [nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-01-22 20:15:45.209  INFO 40688 --- [io-8081-exec-10] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+javax.xml.bind.JAXBElement@46c3976a
+2023-01-22 20:15:45.269  INFO 40688 --- [io-8081-exec-10] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:15:52.150  INFO 40688 --- [nio-8081-exec-1] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+javax.xml.bind.JAXBElement@1212bac4
+2023-01-22 20:15:52.182  INFO 40688 --- [nio-8081-exec-1] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:17:16.766  INFO 40688 --- [nio-8081-exec-5] c.s.playlists.controller.WebController   : [WebController] -> POST, createPlaylist: PlaylistRequest(name=My music)
+javax.xml.bind.JAXBElement@5f71443a
+2023-01-22 20:19:12.344  INFO 40688 --- [nio-8081-exec-7] c.s.playlists.controller.WebController   : [WebController] -> PATCH, add song SimpleSongRequest(songId=88) to playlist 63cd7dac016c9f3532815379
+javax.xml.bind.JAXBElement@7fd311e4
+2023-01-22 20:19:12.379  INFO 40688 --- [nio-8081-exec-7] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:19:18.475  INFO 40688 --- [nio-8081-exec-6] c.s.playlists.controller.WebController   : [WebController] -> PATCH, add song SimpleSongRequest(songId=88) to playlist 63cd7dac016c9f3532815379
+javax.xml.bind.JAXBElement@26451045
+2023-01-22 20:19:18.506  INFO 40688 --- [nio-8081-exec-6] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:19:37.399  INFO 40688 --- [nio-8081-exec-9] c.s.playlists.controller.WebController   : [WebController] -> PATCH, add song SimpleSongRequest(songId=88) to playlist 63cd7dac016c9f3532815379
+javax.xml.bind.JAXBElement@276451c7
+2023-01-22 20:20:36.877  INFO 40688 --- [io-8081-exec-10] c.s.playlists.controller.WebController   : [WebController] -> PATCH, add song SimpleSongRequest(songId=89) to playlist 63cd7dac016c9f3532815379
+javax.xml.bind.JAXBElement@25cd8423
+2023-01-22 20:21:03.747  INFO 40688 --- [nio-8081-exec-1] c.s.playlists.controller.WebController   : [WebController] -> GET, getPlaylistWithID 63cd7dac016c9f3532815379
+javax.xml.bind.JAXBElement@65582e1
+2023-01-22 20:21:45.773  INFO 40688 --- [nio-8081-exec-2] c.s.playlists.controller.WebController   : [WebController] -> POST, createPlaylist: PlaylistRequest(name=Sport)
+javax.xml.bind.JAXBElement@7ed4771
+2023-01-22 20:21:52.175  INFO 40688 --- [nio-8081-exec-3] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+javax.xml.bind.JAXBElement@b403bad
+2023-01-22 20:21:52.206  INFO 40688 --- [nio-8081-exec-3] c.s.p.u.errorhandling.ControllerAdvice   : [ControllerAdvice] -> handle SoapFaultClientException, details:Invalid token
+2023-01-22 20:22:01.799  INFO 40688 --- [nio-8081-exec-5] c.s.playlists.controller.WebController   : [WebController] -> GET, getAllPlaylists
+javax.xml.bind.JAXBElement@1750b4c4
+2023-01-22 20:22:36.026  INFO 40688 --- [nio-8081-exec-4] c.s.playlists.controller.WebController   : [WebController] -> DELETE, deletePlaylist: 63cd7eb9016c9f353281537a
+javax.xml.bind.JAXBElement@3659f08d
+2023-01-22 20:29:50.395  INFO 40688 --- [nio-8081-exec-7] c.s.playlists.controller.WebController   : [WebController] -> POST, createPlaylist: PlaylistRequest(name=Favorites)
+javax.xml.bind.JAXBElement@3cda2586
+2023-01-22 20:45:50.906  INFO 40688 --- [nio-8081-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 867 ms
+
