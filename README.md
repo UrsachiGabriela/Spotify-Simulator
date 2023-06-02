@@ -13,7 +13,7 @@ BACKEND:
     
     Playlists -> implemented in Java using REST.
 
-  These services are secured based on JWT token.
+  These services are secured based on JWT.
   There is also a Gateway component which customizes the way SOAP operations are exposed as REST resources.
 
 
